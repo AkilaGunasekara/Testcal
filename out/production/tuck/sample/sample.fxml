@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="263.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="n1" layoutX="26.0" layoutY="59.0" />
+            <TextField fx:id="n2" layoutX="26.0" layoutY="100.0" />
+            <Button fx:id="addition" layoutX="76.0" layoutY="141.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="44.0" prefWidth="50.0" text="+" />
+            <Label fx:id="display" layoutX="61.0" layoutY="205.0" prefHeight="36.0" prefWidth="76.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
