@@ -1,5 +1,6 @@
 package sample;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -16,10 +17,17 @@ public class Controller {
     private Label display;
 
 
-    public void caladdition(){
-        float number1= Float.parseFloat(n1.getText());
-        float number2= Float.parseFloat((n2.getText()));
+    public void caladdition(ActionEvent event){
 
-        display.setText(String.valueOf(number1+number2));
+        try {
+            float number1 = Float.parseFloat(n1.getText());
+            float number2 = Float.parseFloat(n2.getText());
+            display.setText(String.valueOf(number1 + number2));
+        }
+        catch (Exception e){
+            n1.setText("Enter a Value");
+            n2.setText("Enter a Value");
+        }
+
     }
 }
