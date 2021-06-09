@@ -1,16 +1,11 @@
 package sample;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller {
     @FXML
     private TextField n1;
 
@@ -18,22 +13,13 @@ public class Controller implements Initializable {
     private TextField n2;
 
     @FXML
-    private Button addition;
-
-    @FXML
     private Label display;
 
-    @FXML
-    void caladdition(ActionEvent event){
-        int number1= Integer.parseInt(n1.getText());
-        int number2= Integer.parseInt(n2.getText());
+
+    public void caladdition(){
+        float number1= Float.parseFloat(n1.getText());
+        float number2= Float.parseFloat((n2.getText()));
 
         display.setText(String.valueOf(number1+number2));
-    }
-
-
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-
     }
 }

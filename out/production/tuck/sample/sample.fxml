@@ -21,7 +21,7 @@
          <children>
             <TextField fx:id="n1" layoutX="26.0" layoutY="59.0" />
             <TextField fx:id="n2" layoutX="26.0" layoutY="100.0" />
-            <Button fx:id="addition" layoutX="76.0" layoutY="141.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="44.0" prefWidth="50.0" text="+" />
+            <Button layoutX="76.0" layoutY="141.0" mnemonicParsing="false" onAction="#caladdition" prefHeight="44.0" prefWidth="50.0" text="+" />
             <Label fx:id="display" layoutX="61.0" layoutY="205.0" prefHeight="36.0" prefWidth="76.0">
                <font>
                   <Font size="25.0" />
